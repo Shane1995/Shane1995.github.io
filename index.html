@@ -21,8 +21,8 @@
 			</div>
 
 			<div class="game-info">
-				<h3>Time Remaining: <span id="time">10 sec</span></h3>
-				<h4 id="numbers-remaining">Numbers Remaining:</h4>
+				<h3>Time Remaining: <span id="time" style ="color:red">10 sec</span></h3>
+				<h4 >Numbers Remaining: <span id="numbers-remaining" style ="color:lightGreen" >12 <span></h4>
 			</div>
 			<div class="text-center" style="margin-bottom: 10px;">
 				<button name ="start" class="btn btn-primary " onclick="start()">Start!!</button>
@@ -41,7 +41,11 @@
 				<div class="grid-item"><button class="number"></button></div>
 				<div class="grid-item"><button class="number"></button></div>
 				<div class="grid-item"><button class="number"></button></div>
-			<//div>
+			</div>
+
+			<div class="text-center" style="margin-top: 10px;">
+				<button name ="start" class="btn btn-danger " onclick="reset()">Reset</button>
+			</div>
 		</div>
 		<script src="./js/main.js"> </script> 
 	</body>
