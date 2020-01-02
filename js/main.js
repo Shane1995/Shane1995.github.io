@@ -35,12 +35,11 @@ const start = () => {
 					event.target.style =
 						'padding: 0;background-color: green; color: lightgreen;'
 					if (playArray.length === testArray.length) {
-						clearInterval(countDownTimer)
 						let time = timeLeft
-						time.toFixed(2)
+						clearInterval(countDownTimer)
 						document.querySelector(
 							'#time'
-						).innerHTML = `${time} sec`
+						).innerHTML = `${time.toFixed(2)} sec`
 					}
 				}
 			})
@@ -59,11 +58,9 @@ const disableButtons = () => {
 
 const addToArray = value => {
 	if (playArray.includes(value)) {
-		console.log('It does')
 		return false
 	} else if (playArray.length == value) {
 		playArray.push(value)
-		console.log(playArray)
 		return true
 	}
 }
