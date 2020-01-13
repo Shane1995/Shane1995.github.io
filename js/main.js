@@ -20,6 +20,7 @@ const start = () => {
 	generateRandomArray()
 	buildGrid(testArray)
 	event.target.innerHTML = 'No Pressure'
+	event.target.style = 'width: 150px'
 	event.target.setAttribute('disabled', true)
 	if (timeLeft >= 0) {
 		const buttons = document.querySelectorAll('.number').forEach(button => {
